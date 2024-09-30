@@ -1,0 +1,40 @@
+body{
+    /* overflow-y: scroll; */
+    overflow-y: visible;
+}
+/* Header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+/* Hero section */
+.hero-section {
+  background-color: rgb(3, 3, 94);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+}
+/* Section partenaires */
+.swiper-button-next, .swiper-button-prev{
+  --swiper-navigation-size: 44px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 10px;
+  --swiper-navigation-color: rgb(255, 0, 0);
+  position: absolute;
+}
+/* Section à propos  */
+.apropos-section {
+    background-color: rgb(249, 249, 249);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+  }
+/* Section services */
+.services-section{
+    .box{
+        
+    }
+}
+/* Section team */
+.team-section{
+    background-image: url("background-img.jpeg");
+}
