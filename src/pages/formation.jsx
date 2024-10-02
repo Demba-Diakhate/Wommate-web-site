@@ -3,7 +3,7 @@ import { FaLongArrowAltDown } from "react-icons/fa";
 function Formation() {
   return (
     <section>
-      <div id="section5" className="formation-section flex flex-col justify-center items-center">
+      <div className="formation-section flex flex-col justify-center items-center">
         <h1 className="text-blue-900 text-4xl mt-14">Formations disponibles</h1>
         <div className="all-cartes my-20 flex gap-10">
           <div className="carte w-72 flex flex-col gap-3 p-2 shadow-lg shadow-gray-300 rounded-t-xl">

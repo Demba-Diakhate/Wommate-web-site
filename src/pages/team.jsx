@@ -1,10 +1,10 @@
 function Team() {
   return (
     <section>
-      <div className="team-section w-auto bg-yellow-400 h-96 flex items-center">
-        <div className="team-text flex flex-col gap-5">
+      <div className="team-section w-auto h-96 flex justify-around items-center">
+        <div className="team-text w-[600px] flex flex-col gap-5">
           <h2 className="text-center text-fuchsia-700 text-2xl">Notre mission</h2>
-          <p className="text-justify">
+          <p className="text-justify w-[100%] h-[100px] font-light">
             Wommate accélère la transition vers le numérique. Notre mission est
             d'accompagner toute personne souhaitant acquérir des compétences
             dans les métiers du numérique afin d'être apte a affronter le monde
@@ -14,7 +14,7 @@ function Team() {
         </div>
         <div className="team-photo flex flex-col gap-5">
             <h2 className="text-center text-fuchsia-700 text-2xl">Notre équipe</h2>
-            <div className="team-membre flex gap-10">
+            <div className="team-membre flex gap-5">
                 <div className="membre w-44 flex flex-col items-center text-sm">
                     <img src="images/oumar.jpg" alt="Oumar DIAGNE" className="w-20 h-20 rounded-full"/>
                     <span>Oumar DIAGNE</span>

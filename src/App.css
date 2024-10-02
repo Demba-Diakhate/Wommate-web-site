@@ -1,6 +1,5 @@
 body{
-    /* overflow-y: scroll; */
-    overflow-y: visible;
+    /* background-color: #f0f0f0; */
 }
 /* Header */
 header{
@@ -9,6 +8,9 @@ header{
     left: 0;
     right: 0;
     z-index: 1000;
+}
+.hamburgerMenu{
+    display: none;
 }
 /* Hero section */
 .hero-section {
@@ -37,4 +39,13 @@ header{
 /* Section team */
 .team-section{
     background-image: url("background-img.jpeg");
+}
+
+@media screen and (max-width: 768px){
+    nav, .icon-media{
+        display: none;
+    }
+    .hamburgerMenu{
+        display: block;
+    }
 }
