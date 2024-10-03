@@ -1,35 +1,47 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function Contact() {
+  useEffect(() => {
+    AOS.init({
+      disable: "phone",
+      duration: 700,
+      easing: "ease-out-cubic",
+    });
+  }, []);
+
   return (
     <section>
       <div id="section5" className="contact-section">
-        <h1 className="text-blue-900 text-4xl mt-14 text-center mb-24">
+        <h1 className="text-blue-900 text-4xl mt-14 text-center mb-24" data-aos="zoom-in">
           Contact
         </h1>
         <div className="contact-content flex justify-around">
-          <div className="contactez-nous flex flex-col gap-5 w-1/2">
-            <h2 className="text-2xl text-fuchsia-700 text-center">
+          <div className="contactez-nous flex flex-col gap-5 w-[550px]" data-aos="fade-up" data-aos-duration="500">
+            <h2 className="text-2xl text-fuchsia-700">
               Contactez-nous
             </h2>
-            <p>
+            <p className="text-gray-400">
               Vous avez des questions ? Vous souhaitez en savoir plus sur nos
               formations ? Vous avez besoin d'un devis ? N'hésitez pas à nous
               contacter, nous vous répondrons dans les plus brefs délais !
             </p>
-            <p className="flex gap-3">
+            <p className="flex gap-3 text-gray-400 text-lg">
               <img src="images/phone.png" alt="phone" className="w-8 h-8" />
               +221 77 777 77 77
             </p>
-            <p className="flex gap-3">
+            <p className="flex gap-3 text-gray-400 text-lg">
               <img src="images/mail.png" alt="mail" className="w-8 h-8" />
               contact@womatte.com
             </p>
-            <p className="flex gap-3">
+            <p className="flex gap-3 text-gray-400 text-lg">
               <img src="images/map.png" alt="map" className="w-8 h-8" />
               Thiés, Sénégal rue 10
             </p>
           </div>
-          <div className="formulaire-contact flex flex-col gap-5">
-            <h2 className="text-2xl text-fuchsia-700 text-center">
+          <div className="formulaire-contact flex flex-col gap-5 w-1/3" data-aos="fade-down" data-aos-duration="500">
+            <h2 className="text-2xl text-fuchsia-700">
               Nous envoyer un message
             </h2>
             <form className="form-contact flex flex-col gap-5">
@@ -37,19 +49,19 @@ function Contact() {
                 type="text"
                 id="name"
                 placeholder="Prenom & nom"
-                className="border-2 border-gray-100 rounded-xl"
+                className="border-2 border-gray-100 rounded-lg pl-2"
               />
               <input
                 type="email"
                 id="email"
                 placeholder="contact@wommate.com"
-                className="border-2 border-gray-100 rounded-xl"
+                className="border-2 border-gray-100 rounded-lg pl-2"
               />
               <textarea
                 name="text"
                 id="message"
                 placeholder="Message"
-                className="border-2 border-gray-100 rounded-xl"
+                className="border-2 border-gray-100 rounded-lg pl-2"
               ></textarea>
               <button
                 id="submit"

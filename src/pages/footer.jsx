@@ -5,10 +5,10 @@ import { BsLinkedin } from "react-icons/bs";
 function Footer() {
   return (
     <footer>
-      <div className="content-footer flex gap-14 bg-[#f0f0f0] pt-14 pl-16 pb-14 text-sm">
+      <div className="content-footer flex gap-14 bg-[#f0f0f0] h-[408px] pt-14 pl-16 text-sm">
         <div className="newsletter w-1/5">
           <img src="images/logo_wommate.png" alt="logo wommate" className="w-44"/>
-          <p>
+          <p className="text-gray-500">
             Ne manquez plus aucune mise à jour ! Inscrivez-vous à notre
             newsletter dès maintenant.
           </p>
@@ -18,26 +18,25 @@ function Footer() {
           </form>
         </div>
         <div className="offres w-1/5">
-          <h2>OFFRES</h2>
-          <div className="flex flex-col gap-5 mt-3">
+          <h2 className="text-lg">OFFRES</h2>
+          <div className="flex flex-col gap-5 mt-3 text-gray-500">
           <p>Porpositions de solutions numérique pour entreprise</p>
           <p>Formation personnalisées selon vos beosins</p>
           <p>Conseils et accompagnement</p>
           <p>Formations et accompagnement pour jeunes chercheurs d'emploie</p>
           <p>Formation et accompagnement pour jeunes entrepreuneurs</p>
-
           </div>
         </div>
         <div className="contacts w-1/5">
-            <h2>CONTACTS</h2>
-            <div className="text-contact flex flex-col gap-6 mt-3">
+            <h2 className="text-lg">CONTACTS</h2>
+            <div className="text-contact flex flex-col gap-6 mt-3 text-gray-500">
             <a href="wommateTech@example.com" target="_blank">wommateTech@example.com</a>
             <p>+221 77 628 96 74</p>
             <p>+221 78 290 25 12</p>
             </div>
         </div>
         <div className="reseaux-sociaux">
-            <h2>RESEAUX</h2>
+            <h2 className="text-lg">RESEAUX</h2>
             <ul className="flex gap-4 text-blue-900 text-3xl mt-3">
           <li className="text-fuchsia-700">
             <a href="#">

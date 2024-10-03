@@ -1,13 +1,25 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function Services() {
+  useEffect(() => {
+    AOS.init({
+      disable: "phone",
+      duration: 700,
+      easing: "ease-out-cubic",
+    });
+  }, []);
+
   return (
     <section>
       <div id="section4" className="services-section">
-        <h1 className=" text-blue-900 text-4xl mt-14 text-center">
+        <h1 className=" text-blue-900 text-4xl mt-14 text-center" data-aos="zoom-in">
           Nos Services
         </h1>
         <div className="all-box flex justify-center mt-24">
           <div className="grid gap-10 grid-cols-2 grid-rows-2 w-11/12">
-            <div className="box border-gray-100 border rounded-lg flex flex-col gap-8 p-5 h-96 text-justify hover:shadow-md">
+            <div className="box border-gray-100 border rounded-lg flex flex-col gap-8 p-5 h-96 text-justify hover:shadow-md" data-aos="fade-up">
               <h4 className="text-fuchsia-700 text-xl flex items-center gap-2"><img src="images/icone1.png" alt="icone1" className="w-14"/>Formation qualifiante et personnalisée</h4>
               <p className="text-sm text-blue-950 font-light">
                 Boostez votre carrière grâce à nos formations qualifiantes et
@@ -22,7 +34,7 @@ function Services() {
                 !
               </p>
             </div>
-            <div className="box border-gray-100 border rounded-lg flex flex-col gap-8 p-5 h-96 text-justify hover:shadow-md">
+            <div className="box border-gray-100 border rounded-lg flex flex-col gap-8 p-5 h-96 text-justify hover:shadow-md" data-aos="fade-down">
               <h4 className="text-fuchsia-700 text-xl flex items-center gap-2"><img src="images/icone2.png" alt="icone2" className="w-14"/>Accompagnement jeunes porteurs de projets</h4>
               <p className="text-sm text-blue-950 font-light">
                 Développez vos idées et concrétisez vos projets grâce à notre
@@ -38,7 +50,7 @@ function Services() {
                 !
               </p>
             </div>
-            <div className="box border-gray-100 border rounded-lg flex flex-col gap-8 p-5 h-96 text-justify hover:shadow-md">
+            <div className="box border-gray-100 border rounded-lg flex flex-col gap-8 p-5 h-96 text-justify hover:shadow-md" data-aos="fade-left">
               <h4 className="text-fuchsia-700 text-xl flex items-center gap-2"><img src="images/icone3.png" alt="icone3" className="w-14"/>Accompagnement des entreprises</h4>
               <p className="text-sm text-blue-950 font-light">
                 Boostez votre entreprise grâce à notre accompagnement
@@ -54,7 +66,7 @@ function Services() {
                 entreprise dès maintenant !
               </p>
             </div>
-            <div className="box border-gray-100 border rounded-lg flex flex-col gap-8 p-5 h-96 text-justify hover:shadow-md">
+            <div className="box border-gray-100 border rounded-lg flex flex-col gap-8 p-5 h-96 text-justify hover:shadow-md" data-aos="fade-right">
               <h4 className="text-fuchsia-700 text-xl flex items-center gap-2"><img src="images/icone4.png" alt="icone4" className="w-14"/>Formation courte durée</h4>
               <p className="text-sm text-blue-950 font-light">
                 Que vous cherchiez à acquérir de nouvelles compétences

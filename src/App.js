@@ -8,6 +8,10 @@ import Formation from "./pages/formation";
 import Team from "./pages/team";
 import Contact from "./pages/contact";
 import Footer from "./pages/footer";
+import FooterEnd from "./pages/footer-end";
+// Animation avec swiper
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 function App() {
   return (
@@ -24,6 +28,7 @@ function App() {
         <Team/>
         <Contact />
         <Footer />
+        <FooterEnd />
       </main>
       <footer></footer>
     </>

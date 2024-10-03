@@ -1,6 +1,14 @@
 body{
-    /* background-color: #f0f0f0; */
-}
+  /* Masquer la scrollbar globalement */
+    overflow-x: hidden;
+    overflow-y: auto; /* Maintient le défilement */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer et Edge */
+  }
+    
+  body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
 /* Header */
 header{
     position: fixed;
@@ -19,23 +27,16 @@ header{
 }
 /* Section partenaires */
 .swiper-button-next, .swiper-button-prev{
-  --swiper-navigation-size: 44px;
+  --swiper-navigation-size: 30px;
   --swiper-navigation-top-offset: 50%;
   --swiper-navigation-sides-offset: 10px;
-  --swiper-navigation-color: rgb(255, 0, 0);
-  position: absolute;
+  --swiper-navigation-color: rgb(8, 11, 216);
 }
 /* Section à propos  */
 .apropos-section {
     background-color: rgb(249, 249, 249);
     clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
   }
-/* Section services */
-.services-section{
-    .box{
-        
-    }
-}
 /* Section team */
 .team-section{
     background-image: url("background-img.jpeg");

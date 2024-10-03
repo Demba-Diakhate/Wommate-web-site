@@ -1,10 +1,22 @@
 import { FaLongArrowAltDown } from "react-icons/fa";
 
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function Formation() {
+  useEffect(() => {
+    AOS.init({
+      disable: "phone",
+      duration: 700,
+      easing: "ease-out-cubic",
+    });
+  }, []);
+
   return (
     <section>
       <div className="formation-section flex flex-col justify-center items-center">
-        <h1 className="text-blue-900 text-4xl mt-14">Formations disponibles</h1>
+        <h1 className="text-blue-900 text-4xl mt-14" data-aos="zoom-in">Formations disponibles</h1>
         <div className="all-cartes my-20 flex gap-10">
           <div className="carte w-72 flex flex-col gap-3 p-2 shadow-lg shadow-gray-300 rounded-t-xl">
             <img src="images/dev.png" alt="dev" className="h-52 rounded-t-xl" />
